@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+<script type="text/javascript">
+function schreibwas() {
+	var check1 = prompt("Ist der Schutzschild defekt?","");
+	var check2 = prompt("Sind die Luftschläuche undicht?","");
+	var check3 = prompt("Ist der Hyperantrieb kaputt?","");
+	if ((check1 == "ja")||(check2 == "ja")||(check3 == "ja") ){
+		document.getElementById("ergebnis").innerHTML="Tut mir leid, Ihr Flitzer kommt nicht durch den TÜV.";
+	} else {
+		document.getElementById("ergebnis").innerHTML="Sie dürfen weiterfliegen.";
+	}
+
+}
+</script>
+<link href="style6-1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>TÜV-Prüfung für Raumschiffe</h1>
+<p><a href="#" onClick="schreibwas()">Überprüfen Sie das Raumschiff</a></p>
+<p>Bitte antworten Sie mit ja oder nein.</p>
+<div id="fragebox">
+<div id="ergebnis"></div>
+
+</div>
+</body>
+</html>
